@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Tea ☕</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #807474
+        }
+
+        h2 {
+            text-align: center;
+            border: 1.2px solid #807474;
+            padding: 18px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        img {
+            display:block;
+            margin: 0 auto;
+            max-width: 70%;
+            border-radius: 15px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 15px;
+            margin: 15px  0  7.5px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            color: #F8F5F5;
+            background: #807474;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 7px;
+            box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.2);
+            transition: all 100ms ease-in-out;
+        }
+
+        button:hover {
+            opacity:0.8;
+            cursor: pointer;
+        }
+
+        .study-more {
+            display: block;
+            margin-top: 12px;
+            text-decoration: none;
+            color:#1E46E6;
+            font-size: 6px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px 30px;
+        }
+
+        .study-more-hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Is Tea Time
+    </h1>
+    <h2>
+        I Love Hot Tea
+    </h2>
+    <img
+    src="https://www.albiladdailyeng.com/wp-content/uploads/2019/03/tea_cancer.jpg"
+    alt="Hot Tea"
+    />
+    <p>
+        Study: Piping hot tea, coffee may up esophageal cancer risk
+
+        A recent study has found that the temperature of hot tea is linked with an elevated risk of oesophageal cancer. However,
+        previous studies had already established a link between drinking hot tea and oesophageal cancer.
+        The study, which appeared in the International Journal of Cancer, has examined this association between hot tea and
+        oesophageal cancer by prospectively and objectively measuring tea drinking temperature and following 50,045 individuals
+        aged 40 to 75 years for a median of 10 years.
+        During follow-up, 317 new cases of oesophageal cancer were identified. Compared with drinking less than 700 ml of tea
+        per day at less than 60degC, drinking 700 ml per day or more at a higher temperature (60degC or higher) was associated
+        with a 90 percent higher risk of oesophageal cancer.
+    </p>
+        <a href="https://www.albiladdailyeng.com/study-piping-hot-tea-coffee-may-esophageal-cancer-risk/"
+        target="-blank" 
+        plus="study-more"
+        >
+        Study more on website 
+
+        </a>
+    </p>
+    <button  plus="drink-button">
+      ☕  Drink Hot Tea
+    </button>
+    This page was built by
+    <a href="malito:ypokua@yahoo.com" target="blank">
+        Ellen Nimako
+        </a>
+        <script>
+            function drink() {
+                let name = prompt("what is you name?");
+                let drink = prompt("what is your favourite tea?");
+                let emoji = prompt("what is your favourite emoji");
+                alert("Thank you" +  name  + "! continue to drink tea, especially hot tea! " +
+                emoji
+                );
+            }
+            let drinkButton = document.querySelector("button");
+            drinkButton.addEventListener("click", drink);
+        </script>
+</body>
+</html>
